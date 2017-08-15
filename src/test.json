@@ -1,0 +1,25 @@
+{
+  "id": "0000000000000000000000000000000000000000000000000000000000000014",
+  "isNewRecord": false,
+  "remarks": "电源柜标签10",
+  "tagId": "E281CA0020000000000002DA",
+  "addTime": "2017-04-26 09:46:16",
+  "temperature": "30.0",
+  "tblTemperature": {
+    "id": "1c3782ea07514577b04c1a87c3d824f0",
+    "isNewRecord": false
+  }
+},
+{
+ "id": "0000000000000000000000000000000000000000000000000000000000000019",
+ "isNewRecord": false,
+ "remarks": "电源柜标签10",
+ "tagId": "E281CA0020000000000002DA",
+ "addTime": "2017-04-26 12:52:11",
+ "temperature": "40.0",
+ "tblTemperature": {
+    "id":"1c3782ea07514577b04c1a87c3d824f0",
+    "isNewRecord": false}
+},
+{"id": "0000000000000000000000000000000000000000000000000000000000000020", "isNewRecord": false, "remarks": "电源柜标签10", "tagId": "E281CA0020000000000002DA", "addTime": "2017-04-26 13:20:28", "temperature": "20.0", "tblTemperature": {"id": "1c3782ea07514577b04c1a87c3d824f0","isNewRecord": false}}, {"id": "0000000000000000000000000000000000000000000000000000000000000027", "isNewRecord": false, "remarks": "电源柜标签10", "tagId": "E281CA0020000000000002DA", "addTime": "2017-04-27 14:17:09", "temperature": "50.0", "tblTemperature": {"id": "1c3782ea07514577b04c1a87c3d824f0", "isNewRecord":false}}, {"id": "0000000000000000000000000000000000000000000000000000000000000040", "isNewRecord": false, "remarks": "电源柜标签10", "tagId": "E281CA0020000000000002DA", "addTime": "2017-05-02 15:59:34", "temperature": "70.0", "tblTemperature": {"id": "1c3782ea07514577b04c1a87c3d824f0", "isNewRecord": false}
+}
