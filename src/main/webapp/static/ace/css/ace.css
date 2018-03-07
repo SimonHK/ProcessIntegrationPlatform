@@ -2280,7 +2280,7 @@ body.mob-safari .sidebar.sidebar-fixed {
 	//it's possible have standard functionality in Chrome by going to:
 	//chrome://flags/#fixed-position-creates-stacking-context
 	//changing "Fixed position elements create stacking contexts" to "Disabled"
-	//and removing the following rules
+	//and removing the following com.sample.rules
 	//and assignning a higher "@submenu-zindex"
 
 	.sidebar.sidebar-fixed {

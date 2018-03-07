@@ -789,7 +789,7 @@ DataTable.defaults = {
 	 *    filtering)
 	 *  @param {int} iTotal Total number of rows in the data set, after filtering
 	 *  @param {string} sPre The string that DataTables has formatted using it's
-	 *    own rules
+	 *    own com.sample.rules
 	 *  @returns {string} The string to be displayed in the information element.
 	 *  @dtopt Callbacks
 	 * 

@@ -6478,18 +6478,18 @@ $.extend($.jgrid,{
  * The work is inspired from this Stefan Pirvu
  * http://www.codeproject.com/KB/scripting/json-filtering.aspx
  *
- * The filter uses JSON entities to hold filter rules and groups. Here is an example of a filter:
+ * The filter uses JSON entities to hold filter com.sample.rules and groups. Here is an example of a filter:
 
 { "groupOp": "AND",
       "groups" : [ 
         { "groupOp": "OR",
-            "rules": [
+            "com.sample.rules": [
                 { "field": "name", "op": "eq", "data": "England" }, 
                 { "field": "id", "op": "le", "data": "5"}
              ]
         } 
       ],
-      "rules": [
+      "com.sample.rules": [
         { "field": "name", "op": "eq", "data": "Romania" }, 
         { "field": "id", "op": "le", "data": "1"}
       ]

@@ -8,6 +8,15 @@
 	<name>${artifactId}-${version}</name>
 	<!--<url>http://maven.apache.org</url>-->
 
+	<scm>
+		<!--git项目地址可以用SSH  也可以用 HTTPS的-->
+		<connection>scm:git:https://github.com/SimonHK/ProcessIntegrationPlatform.git</connection>
+		<developerConnection>scm:git:https://github.com/SimonHK/ProcessIntegrationPlatform.git</developerConnection>
+		<!--git项目浏览器里的地址-->
+		<url>https://github.com/SimonHK/ProcessIntegrationPlatform</url>
+	</scm>
+
+	<!--平台开发公共参数-->
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spring.version>4.2.5.RELEASE</spring.version>
@@ -15,7 +24,7 @@
 		<runtime.version>6.4.0.Final</runtime.version>
 		<activiti.version>5.22.0</activiti.version>
 	</properties>
-
+	<!--平台依赖-->
 	<dependencies>
 
 		<!-- spring start -->
@@ -750,7 +759,12 @@
 			<artifactId>activation</artifactId>
 			<version>1.1.1</version>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+    </dependencies>
 	<build>
 		<finalName>${name}</finalName>
 		<plugins>

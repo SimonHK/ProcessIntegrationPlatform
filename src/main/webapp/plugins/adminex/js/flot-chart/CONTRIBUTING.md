@@ -25,7 +25,7 @@ duplicated efforts.
 
 ### Pull Requests ###
 
-To make merging as easy as possible, please keep these rules in mind:
+To make merging as easy as possible, please keep these com.sample.rules in mind:
 
  1. Divide larger changes into a series of small, logical commits with
 	descriptive messages.

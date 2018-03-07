@@ -84,8 +84,6 @@ public class BpmModelController extends BaseController {
 
 		System.out.println("******************:["+modelData.getId()+"]********************");
 
-
-
 		mv.addObject("msg","success");
 		mv.setViewName("save_result");
 		return mv;

@@ -17,8 +17,8 @@
 		#dialog-add,#dialog-message,#dialog-comment{width:100%; height:100%; position:fixed; top:0px; z-index:10000; display:none;}
 		.commitopacity{position:absolute; width:100%; height:500px; background:#7f7f7f; filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity: 0.5; opacity: 0.5; top:0px; z-index:99999;}
 		.commitbox{width:95%; padding-left:42px; padding-top:69px; position:absolute; top:0px; z-index:99999;}
-		.commitbox_inner{width:96%; height:235px;  margin:6px auto; background:#efefef; border-radius:5px;}
-		.commitbox_top{width:100%; height:233px; margin-bottom:10px; padding-top:10px; background:#FFF; border-radius:5px; box-shadow:1px 1px 3px #e8e8e8;}
+		.commitbox_inner{width:96%; height:335px;  margin:6px auto; background:#efefef; border-radius:5px;}
+		.commitbox_top{width:100%; height:333px; margin-bottom:10px; padding-top:10px; background:#FFF; border-radius:5px; box-shadow:1px 1px 3px #e8e8e8;}
 		.commitbox_top textarea{width:95%; height:165px; display:block; margin:0px auto; border:0px;}
 		.commitbox_cen{width:95%; height:40px; padding-top:10px;}
 		.commitbox_cen div.left{float:left;background-size:15px; background-position:0px 3px; padding-left:18px; color:#f77500; font-size:16px; line-height:27px;}
@@ -47,7 +47,7 @@
 						        	<br/>
 						        	<table>
 						        		<tr height="42px;">
-						        			<td style="padding-left: 16px;text-align: right;">属性名：</td><td><div class="nav-search"><input class="nav-search-input" style="width:210px;" name="dname" id="dname" type="text" value="" placeholder="首字母必须为字母或下划线" title="属性名" /></div></td>
+						        			<td style="padding-left: 16px;text-align: right;">属性名：</td><td><div class="nav-search"><input class="nav-search-input" style="width:180px;" name="dname" id="dname" type="text" value="" placeholder="首字母必须为字母或下划线" title="属性名" /></div></td>
 						        			<td style="padding-left: 16px;text-align: right;">属性类型：</td>
 						        			<td style="padding-bottom: 5px;">
 						        				<label style="float:left;padding-left: 20px;"><input name="form-field-radiot" id="form-field-radio1" onclick="setType('String');" type="radio" value="icon-edit"><span class="lbl">String</span></label>
@@ -57,12 +57,12 @@
 											</td>
 						        		</tr>
 						        		<tr height="42px;">
-						        			<td style="padding-left: 16px;text-align: right;">其备注：</td><td><div class="nav-search"><input class="nav-search-input" style="width:210px;" name="dbz" id="dbz" type="text" value="" placeholder="例如 name的备注为 '姓名'" title="备注"/></div></td>
+						        			<td style="padding-left: 16px;text-align: right;">其备注：</td><td><div class="nav-search"><input class="nav-search-input" style="width:180px;" name="dbz" id="dbz" type="text" value="" placeholder="例如 name的备注为 '姓名'" title="备注"/></div></td>
 						        			<td style="padding-left: 16px;text-align: right;">前台录入：</td>
 						        			<td>
 						        				<div style="float: left;padding-top: 3px;">
-						        				<label style="float:left;padding-left: 20px;"><input name="form-field-radioq" id="form-field-radio4" onclick="isQian('是');" type="radio" value="icon-edit" checked="checked"><span class="lbl">是</span></label>
-												<label style="float:left;padding-left: 20px;"><input name="form-field-radioq" id="form-field-radio5" onclick="isQian('否');" type="radio" value="icon-edit"><span class="lbl">否</span></label>
+													<label style="float:left;padding-left: 20px;"><input name="form-field-radioq" id="form-field-radio4" onclick="isQian('是');" type="radio" value="icon-edit" checked="checked"><span class="lbl">是</span></label>
+													<label style="float:left;padding-left: 20px;"><input name="form-field-radioq" id="form-field-radio5" onclick="isQian('否');" type="radio" value="icon-edit"><span class="lbl">否</span></label>
 												</div>
 												<div class="nav-search" style="float: right;padding-right: 5px;">
 													长度：<input class="nav-search-input" style="width:66px;" name="flength" id="flength" type="number" value="" placeholder="长度" title="长度" />
@@ -70,17 +70,41 @@
 												</div>
 											</td>
 						        		</tr>
+										<tr height="42px;">
+											<td style="padding-left: 16px;text-align: right;">外键关联：</td>
+											<td>
+												<div style="float: left;padding-top: 3px;">
+														<select class="chosen-select form-control" name="isFkeys" id="isFkeys" data-placeholder="请选择" style="vertical-align:top;width: 80px;">
+															<option value="0" selected>否</option>
+															<option value="1">是</option>
+														</select>
+												</div>
+											</td>
+											<td style="padding-left: 16px;text-align: right;">检索项：</td>
+											<td>
+												<div style="float: left;padding-top: 3px;">
+													<select class="chosen-select form-control" name="isSearch" id="isSearch" data-placeholder="请选择" style="vertical-align:top;width: 80px;">
+														<option value="0" selected>否</option>
+														<option value="1">是</option>
+													</select>
+												</div>
+											</td>
+										</tr>
 						        		<tr height="42px;">
-						        			<td style="padding-left: 16px;text-align: right;">默认值：</td><td><div class="nav-search"><input class="nav-search-input" style="width:210px;" name="ddefault" id="ddefault" type="text" value="" disabled="disabled" placeholder="后台附加值时生效" title="默认值"/></div></td>
-						        			<td style="padding-left: 16px;text-align: right;"></td>
+											<td style="padding-left: 16px;text-align: right;">默认值：</td>
+											<td>
+												<div class="nav-search">
+													<input class="nav-search-input" style="width:180px;" name="ddefault" id="ddefault" type="text" value="" disabled="disabled" placeholder="后台附加值时生效" title="默认值"/>
+												</div>
+											</td>
 						        			<td>
-						        			<div class="commitbox_cen">
-								                <div class="left" id="cityname"></div>
-								                <div class="right" style="padding-right: 28px;"><span class="save" onClick="saveD()">保存</span>&nbsp;&nbsp;<span class="quxiao" onClick="cancel_pl()">取消</span></div>
-								            </div>
+												<div class="commitbox_cen">
+													<div class="left" id="cityname"></div>
+													<div class="right" style="padding-right: 28px;"><span class="save" onClick="saveD()">保存</span>&nbsp;&nbsp;<span class="quxiao" onClick="cancel_pl()">取消</span></div>
+												</div>
 						        			</td>
 						        		</tr>
-						        		<tr>
+						        		<%--<tr>
 						        			<td style="padding-left: 16px;" colspan="100">
 						        				<font color="red" style="font-weight: bold;">
 						        					注意：<br/>
@@ -88,7 +112,7 @@
 						        					  2. 主键为  类名_ID 格式，所有字段的字母均用大写
 						        				</font>
 											</td>
-						        		</tr>
+						        		</tr>--%>
 						        	</table>
 						        </div>
 						  	</div>
@@ -104,12 +128,6 @@
 							<tr>
 								<td style="width:76px;text-align: right;">模块说明：</td>
 								<td><div class="nav-search"><input class="nav-search-input" type="text" name="TITLE" id="TITLE" value="${pd.TITLE }" placeholder="这里输入模块说明内容此内容作为菜单名称建议中文4～5个字" style="width:543px;" title="说明"/></div></td>
-								<td style="width:76px;text-align: right;">模版类型：</td>
-								<td style="padding-left:2px">
-									<select id="codeTemplate" name="codeTemplate">
-										<option>请选择</option>
-									</select>
-								</td>
 							</tr>
 						</table>
 						<table style="margin-top: 5px;">
@@ -156,6 +174,12 @@
 										</c:forEach>
 									</select>
 								</td>
+								<td style="width:76px;text-align: right;">模版类型：</td>
+								<td style="padding-left:2px">
+									<select id="codeTemplate" name="codeTemplate">
+										<option>请选择</option>
+									</select>
+								</td>
 							</tr>
 						</table>
 						<table id="table_report" class="table table-striped table-bordered table-hover" style="margin-top: 5px;">
@@ -169,6 +193,8 @@
 										<th class="center">备注</th>
 										<th class="center" style="width:79px;">前台录入</th>
 										<th class="center">默认值</th>
+										<th class="center">检索项</th>
+										<th class="center">外键</th>
 										<th class="center" style="width:69px;">操作</th>
 									</tr>
 								</thead>

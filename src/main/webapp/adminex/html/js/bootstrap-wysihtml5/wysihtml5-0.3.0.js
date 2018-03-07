@@ -4692,10 +4692,10 @@ wysihtml5.dom.observe = function(element, eventNames, handler) {
 };
 /**
  * HTML Sanitizer
- * Rewrites the HTML based on given rules
+ * Rewrites the HTML based on given com.sample.rules
  *
  * @param {Element|String} elementOrHtml HTML String to be sanitized OR element whose content should be sanitized
- * @param {Object} [rules] List of rules for rewriting the HTML, if there's no rule for an element it will
+ * @param {Object} [com.sample.rules] List of com.sample.rules for rewriting the HTML, if there's no rule for an element it will
  *    be converted to a "span". Each rule is a key/value pair where key is the tag to convert, and value the
  *    desired substitution.
  * @param {Object} context Document object in which to parse the html, needed to sandbox the parsing

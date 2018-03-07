@@ -59,31 +59,31 @@ Build date: 2012-07-04 21:23:42 (65ff594cd80b9bad45df640c22cc0adb52c95a7b)
  */
 /**
  * @var {boolean} $include-ie
- * True to include Internet Explorer specific rules
+ * True to include Internet Explorer specific com.sample.rules
  */
 /**
  * @var {boolean} $include-ff
- * True to include Firefox specific rules
+ * True to include Firefox specific com.sample.rules
  */
 /**
  * @var {boolean} $include-chrome
- * True to include Chrome specific rules
+ * True to include Chrome specific com.sample.rules
  */
 /**
  * @var {boolean} $include-safari
- * True to include Safari specific rules
+ * True to include Safari specific com.sample.rules
  */
 /**
  * @var {boolean} $include-opera
- * True to include Opera specific rules
+ * True to include Opera specific com.sample.rules
  */
 /**
  * @var {boolean} $include-webkit
- * True to include Webkit specific rules
+ * True to include Webkit specific com.sample.rules
  */
 /**
  * @var {boolean} $compile-all
- * True to copile all CSS, even if above include rules are false
+ * True to copile all CSS, even if above include com.sample.rules are false
  */
 /**
  * @var {boolean} $scope-reset-css

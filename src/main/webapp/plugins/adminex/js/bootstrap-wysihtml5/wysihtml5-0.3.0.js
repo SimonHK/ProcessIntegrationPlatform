@@ -4692,10 +4692,10 @@ wysihtml5.dom.observe = function(element, eventNames, handler) {
 };
 /**
  * HTML Sanitizer
- * Rewrites the HTML based on given rules
+ * Rewrites the HTML based on given com.sample.rules
  *
  * @param {Element|String} elementOrHtml HTML String to be sanitized OR element whose content should be sanitized
- * @param {Object} [rules] List of rules for rewriting the HTML, if there's no rule for an element it will
+ * @param {Object} [com.sample.rules] List of com.sample.rules for rewriting the HTML, if there's no rule for an element it will
  *    be converted to a "span". Each rule is a key/value pair where key is the tag to convert, and value the
  *    desired substitution.
  * @param {Object} context Document object in which to parse the html, needed to sandbox the parsing
@@ -5650,7 +5650,7 @@ wysihtml5.dom.replaceWithChildNodes = function(node) {
  * @author Christopher Blum
  */
 wysihtml5.quirks.cleanPastedHTML = (function() {
-  // TODO: We probably need more rules here
+  // TODO: We probably need more com.sample.rules here
   var defaultRules = {
     // When pasting underlined links <a> into a contentEditable, IE thinks, it has to insert <u> to keep the styling
     "a u": wysihtml5.dom.replaceWithChildNodes
@@ -8360,7 +8360,7 @@ wysihtml5.views.View = Base.extend(
     // --------- editor styles ---------
     dom.copyStyles(TEXT_FORMATTING).from(textareaElement).to(this.element).andTo(this.blurStylesHost);
   
-    // --------- apply standard rules ---------
+    // --------- apply standard com.sample.rules ---------
     dom.insertCSS(ADDITIONAL_CSS_RULES).into(this.element.ownerDocument);
   
     // --------- :focus styles ---------
@@ -9381,7 +9381,7 @@ wysihtml5.views.Textarea = wysihtml5.views.View.extend(
     toolbar:              undef,
     // Whether urls, entered by the user should automatically become clickable-links
     autoLink:             true,
-    // Object which includes parser rules to apply when html gets inserted via copy & paste
+    // Object which includes parser com.sample.rules to apply when html gets inserted via copy & paste
     // See parser_rules/*.js for examples
     parserRules:          { tags: { br: {}, span: {}, div: {}, p: {} }, classes: {} },
     // Parser method to use when the user inserts content via copy & paste

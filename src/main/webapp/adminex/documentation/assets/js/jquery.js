@@ -8231,7 +8231,7 @@ jQuery.fn.extend({
 					display = elem.style.display;
 
 					// Reset the inline display of this element to learn if it is
-					// being hidden by cascaded rules or not
+					// being hidden by cascaded com.sample.rules or not
 					if ( !jQuery._data(elem, "olddisplay") && display === "none" ) {
 						display = elem.style.display = "";
 					}

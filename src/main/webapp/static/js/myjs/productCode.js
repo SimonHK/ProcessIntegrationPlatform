@@ -171,6 +171,8 @@ $(function(){if('createCode'== locat[3]){locat =  locat[0]+'//'+locat[2];}else{l
 		var msgIndex = $("#msgIndex").val(); 	 //msgIndex不为空时是修改
 		var flength = $("#flength").val(); 	 	 //长度
 		var decimal = $("#decimal").val(); 	 	 //小数
+		var isSearch = $("#isSearch").val();     //是否检索项
+		var isFkeys  = $("#isFkeys").val();      //是否外表关联外键
 		
 		if(dname==""){
 			$("#dname").tips({
@@ -250,7 +252,7 @@ $(function(){if('createCode'== locat[3]){locat =  locat[0]+'//'+locat[2];}else{l
 		
 		dbz = dbz == '' ? '无':dbz;
 		ddefault = ddefault == '' ? '无':ddefault;
-		var fields = dname + ',fh,' + dtype + ',fh,' + dbz + ',fh,' + isQian + ',fh,' + ddefault + ',fh,' + flength + ',fh,' + decimal;
+		var fields = dname + ',fh,' + dtype + ',fh,' + dbz + ',fh,' + isQian + ',fh,' + ddefault + ',fh,' + flength + ',fh,' + decimal + ',fh,' + isSearch + ',fh,' + isFkeys;
 		
 		if(msgIndex == ''){
 			arrayField(fields);
@@ -275,6 +277,8 @@ $(function(){if('createCode'== locat[3]){locat =  locat[0]+'//'+locat[2];}else{l
 		$("#form-field-radio4").click();
 		$("#flength").val(255);
 		$("#ddefault").attr("disabled",true);
+        $("#isSearch").val(isSearch);			//是否检索项
+        $("#isFkeys").val(isFkeys);				//是否外键
 	}
 	
 	//打开编辑属性(修改)
@@ -314,6 +318,8 @@ $(function(){if('createCode'== locat[3]){locat =  locat[0]+'//'+locat[2];}else{l
 		}
 		$("#flength").val(efieldarray[5]);	//长度
 		$("#decimal").val(efieldarray[6]);	//小数点
+        $("#isSearch").val(isSearch);			//是否检索项
+        $("#isFkeys").val(isFkeys);				//是否外键
 	}
 	
 	//关闭编辑属性
@@ -371,6 +377,8 @@ $(function(){if('createCode'== locat[3]){locat =  locat[0]+'//'+locat[2];}else{l
 			'<td class="center">'+fieldarray[2]+'<input type="hidden" name="field2'+index+'" value="'+fieldarray[2]+'"></td>'+
 			'<td class="center">'+fieldarray[3]+'<input type="hidden" name="field3'+index+'" value="'+fieldarray[3]+'"></td>'+
 			'<td class="center">'+fieldarray[4]+'<input type="hidden" name="field4'+index+'" value="'+fieldarray[4]+'"></td>'+
+            '<td class="center">'+fieldarray[7]+'<input type="hidden" name="field7'+index+'" value="'+fieldarray[7]+'"></td>'+
+            '<td class="center">'+fieldarray[8]+'<input type="hidden" name="field8'+index+'" value="'+fieldarray[8]+'"></td>'+
 			'<td class="center" style="width:100px;">'+
 				'<input type="hidden" name="field'+index+'" value="'+value+'">'+
 				'<a class="btn btn-mini btn-info" title="编辑" onclick="editField(\''+value+'\',\''+index+'\')"><i class="ace-icon fa fa-pencil-square-o bigger-120"></i></a>&nbsp;'+

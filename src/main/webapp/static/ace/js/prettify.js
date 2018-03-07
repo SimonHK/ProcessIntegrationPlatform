@@ -29,7 +29,7 @@
  * Usage: <ol>
  * <li> include this source file in an html page via
  *   {@code <script type="text/javascript" src="/path/to/prettify.js"></script>}
- * <li> define style rules.  See the example page for examples.
+ * <li> define style com.sample.rules.  See the example page for examples.
  * <li> mark the {@code <pre>} and {@code <code>} tags in your source with
  *    {@code class=prettyprint.}
  *    You can also use the (html deprecated) {@code <xmp>} tag, but the pretty
@@ -224,7 +224,7 @@ var prettyPrint;
    * "in" keyword since it's not a keyword in many languages, and might be used
    * as a count of inches.
    *
-   * <p>The link above does not accurately describe EcmaScript rules since
+   * <p>The link above does not accurately describe EcmaScript com.sample.rules since
    * it fails to distinguish between (a=++/b/i) and (a++/b/i) but it works
    * very well in practice.
    *

@@ -22,6 +22,8 @@
 	<mvc:resources mapping="/plugins/**" location="/,/plugins/" />
 	<mvc:resources mapping="/uploadFiles/**" location="/,/uploadFiles/" />
 	<mvc:resources mapping="/bpmediter/**" location="/bpmediter/"/>
+	<mvc:resources mapping="/jquery-ui-bootstrap/**" location="/"/>
+	<mvc:resources mapping="/adminex/html/**" location="/,/adminex/html/"/>
 
 	<!-- 访问拦截  -->  
   	<mvc:interceptors>
