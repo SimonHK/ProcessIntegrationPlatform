@@ -21,16 +21,19 @@ public class LoginHandlerInterceptor extends HandlerInterceptorAdapter{
 		if(path.matches(Const.NO_INTERCEPTOR_PATH)){
 			return true;
 		}else{
+			//public static final String SESSION_USER = "sessionUser";//session用的用户
 			User user = (User)Jurisdiction.getSession().getAttribute(Const.SESSION_USER);
 			if(user!=null){
 				path = path.substring(1, path.length());
 				boolean b = Jurisdiction.hasJurisdiction(path); //访问权限校验
 				if(!b){
+					//public static final String LOGIN = "/login_toLogin.do";					//登录地址
 					response.sendRedirect(request.getContextPath() + Const.LOGIN);
 				}
 				return b;
 			}else{
 				//登陆过滤
+				//LOGIN = "/login_toLogin.do";					//登录地址
 				response.sendRedirect(request.getContextPath() + Const.LOGIN);
 				return false;		
 			}

@@ -155,7 +155,7 @@
 		<!-- page heading start-->
 		<div class="page-heading">
 			<h3>
-				后台首页
+				个人工作台
 			</h3>
 			<ul class="breadcrumb">
 				<li>
