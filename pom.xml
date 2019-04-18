@@ -810,11 +810,11 @@
         </plugins>
     </build>
     <!--仓库地址-->
-    <repositories>
+   <!-- <repositories>
         <repository>
             <id>releases</id>
             <name>Releases</name>
-            <!--<url>http://192.168.2.86:9091/nexus/content/repositories/releases/</url>-->
+            &lt;!&ndash;<url>http://192.168.2.86:9091/nexus/content/repositories/releases/</url>&ndash;&gt;
             <url>http://123.103.90.5:9091/nexus/content/repositories/releases/</url>
             <releases>
                 <enabled>true</enabled>
@@ -826,7 +826,7 @@
         <repository>
             <id>snapshots</id>
             <name>Snapshots</name>
-            <!--<url>http://192.168.2.86:9091/nexus/content/repositories/snapshots/</url>-->
+            &lt;!&ndash;<url>http://192.168.2.86:9091/nexus/content/repositories/snapshots/</url>&ndash;&gt;
             <url>http://123.103.90.5:9091/nexus/content/repositories/snapshots/</url>
             <releases>
                 <enabled>true</enabled>
@@ -852,7 +852,7 @@
                 <updatePolicy>daily</updatePolicy>
             </snapshots>
         </repository>
-    </repositories>
+    </repositories>-->
     <!--插件地址-->
     <!--<pluginRepositories>
         <pluginRepository>
